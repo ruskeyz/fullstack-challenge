@@ -1,5 +1,8 @@
 ##  Fullstack Engineer Challenge
 
+![Alt text](./1.png "Title")
+![Alt text](./2.png "Title")
+
 We're really excited that you'd like to join the engineering team at ! So we can see how you'd fit into our team, we'd like to get a feel for your technical and problem solving skills by asking you complete the following exercise.
 
 We really appreciate you taking the time to work through this, but please limit yourself to no more than a few hours on the exercise. The intent of the exercise is not for you to complete all the tasks, what we're interested in is seeing how you think and approach working through the problem. 
