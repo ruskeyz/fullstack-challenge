@@ -11,6 +11,7 @@ import CreateReport from "./views/Reports/CreateReport";
 import ReportsList from "./views/Reports/ReportsList";
 import LoginPage from "./views/auth/LoginPage";
 import AuthLayout from "./views/auth/AuthLayout";
+import Report from "./views/Reports/Report";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
         </Route>
         <Route path="dashboard" element={<ProtectedLayout />}>
           <Route path="report" element={<CreateReport />}></Route>
+          <Route path="reports/:id" element={<Report />}> </Route>
           <Route path="reports" element={<ReportsList />}></Route>
         </Route>
       </Route>

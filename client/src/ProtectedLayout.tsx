@@ -3,9 +3,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useAuth } from "./hooks/useAuth";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import clsx from "clsx";
+
 const navigation = [
-  { name: "Projects", href: "report", current: false },
-  { name: "Create Report", href: "reports" },
+  { name: "Reports", href: "/dashboard/reports", current: false },
+  { name: "Create Report", href: "/dashboard/report" },
 ];
 export default function ProtectedLayout() {
   const { user } = useAuth();
@@ -60,16 +61,6 @@ export default function ProtectedLayout() {
                       ))}
                     </div>
                   </div>
-                  <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                    <button
-                      type="button"
-                      className="relative rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                    >
-                      <span className="absolute -inset-1.5" />
-                      <span className="sr-only">View notifications</span>
-                      <BellIcon className="h-6 w-6" aria-hidden="true" />
-                    </button>
-                  </div>
                   <div className="-mr-2 flex items-center sm:hidden">
                     {/* Mobile menu button */}
                     <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
@@ -112,26 +103,11 @@ export default function ProtectedLayout() {
                 </div>
                 <div className="border-t border-gray-200 pb-3 pt-4">
                   <div className="flex items-center px-4">
-                    <div className="flex-shrink-0">
-                      <img
-                        className="h-10 w-10 rounded-full"
-                        src="{user.imageUrl}"
-                        alt=""
-                      />
-                    </div>
                     <div className="ml-3">
                       <div className="text-base font-medium text-gray-800">
                         {user}
                       </div>
                     </div>
-                    <button
-                      type="button"
-                      className="relative ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                    >
-                      <span className="absolute -inset-1.5" />
-                      <span className="sr-only">View notifications</span>
-                      <BellIcon className="h-6 w-6" aria-hidden="true" />
-                    </button>
                   </div>
                 </div>
               </Disclosure.Panel>
