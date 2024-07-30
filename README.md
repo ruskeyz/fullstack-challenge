@@ -1,5 +1,4 @@
 ##  Fullstack Engineer Challenge
-https://github.com/novatans/novata-lutay-elijah
 
 We're really excited that you'd like to join the engineering team at ! So we can see how you'd fit into our team, we'd like to get a feel for your technical and problem solving skills by asking you complete the following exercise.
 
