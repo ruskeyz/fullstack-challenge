@@ -2,8 +2,6 @@ import express from "express";
 import { json } from "body-parser";
 import cors from "cors";
 import pg from "pg";
-import { async } from "regenerator-runtime";
-import { error } from "console";
 
 const createApp = () => {
   const pool = new pg.Pool({
